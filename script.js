@@ -17,7 +17,7 @@ const btnClose = document.querySelector('.close-modal');
 const modal = document.querySelector('.modal-card');
 const overlay = document.querySelector('.overlay');
 
-let beat = new Audio('yay.mp3');
+let beat = new Audio('audio/yay.mp3');
 
 //initial conditions
 score0El.textContent = 0;
@@ -96,7 +96,7 @@ btnRoll.addEventListener('click', function () {
 
     //accordingly match the image of the dice
 
-    diceEl.src = `dice-${dice}.png`; //dice changes everytime u roll..the image is imported according to the value
+    diceEl.src = `images/dice-${dice}.png`; //dice changes everytime u roll..the image is imported according to the value
     diceEl.classList.remove('hidden');
     console.log(dice);
 
